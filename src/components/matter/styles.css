@@ -1,0 +1,9 @@
+.block {
+    background-color: #3586ff;
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
