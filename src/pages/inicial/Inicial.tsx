@@ -5,12 +5,12 @@ import './styles.css'
 
 const Inicial = () => {
   return (
-    <>
+    <div id='principal'>
         <Header></Header>
           <main>
             <div id='sec1'>
-              <h2 id='titulo-pagina' >Primeiro semestre ADS</h2>
-              <div className='buttons' >
+              <h2 id='titulo-pagina'>Primeiro semestre ADS</h2>
+              <div className='buttons'>
                 <button>Saiba mais</button>
                 <button>Outro botão</button>
               </div>
@@ -18,7 +18,7 @@ const Inicial = () => {
             <ImgTech/>
           </main>
           <Waves/>
-    </>
+    </div>
   )
 }
 

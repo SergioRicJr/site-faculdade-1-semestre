@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#principal {
+    height: 110vh;
+}
+
 #titulo-pagina {
     padding-bottom: 30px;
 }
