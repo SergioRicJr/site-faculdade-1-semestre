@@ -1,21 +1,24 @@
 import {FaBroadcastTower, FaDatabase, FaIndustry, FaJava, FaPython} from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAtom, faDatabase, faIndustry, faNetworkWired, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
+import {faAtom, faDatabase, faIndustry, faNetworkWired, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 import {BancoDeDados} from './conteudos/bandodedados/BancoDeDados'
-import {useEffect, useRef, useState} from 'react'
+import {useEffect, useMemo, useRef, useState} from 'react'
 import { RedesDeComputadores } from './conteudos/redes/RedesDeComputadores'
 import { AutomacaoIndustrial } from './conteudos/automacao/AutomacaoIndustrial'
 import { LinguagemDeProgramacao } from './conteudos/programacao/LinguagemDeProgramacao'
 import { CienciaDeDados } from './conteudos/cienciadados/CienciaDeDados'
 import { motion, useInView, useAnimation} from 'framer-motion'
+import BlockMatter from '../../components/matter/BlockMatter'
+
+
 
 const Apresentacoes = () => {
   const [materia, setMateria] = useState<JSX.Element>(<BancoDeDados/>)
   const ref = useRef(null)
-  console.log(ref)
   const inView = useInView(ref)
   const animation = useAnimation()
+  const [selectedTitle, setSelectedTitle] = useState("Banco de dados")
   
   useEffect(()=> {
     if(inView) {
@@ -33,53 +36,61 @@ const Apresentacoes = () => {
     }
     console.log(inView)
   }, [inView])
+
+  const handleMateria = (component: JSX.Element) => {
+    setMateria(component)
+    
+  }
+
+  const listaMaterias = useMemo(()=> {
+    return [
+      {
+        title: "Banco de dados",
+        icon: faDatabase,
+        handleFunc: handleMateria,
+        component: <BancoDeDados/>
+      },
+      {
+        title: "Redes de computadores",
+        icon: faNetworkWired,
+        handleFunc: handleMateria,
+        component: <RedesDeComputadores/>
+      },
+      {
+        title: "Automação industrial",
+        icon: faIndustry,
+        handleFunc: handleMateria,
+        component: <AutomacaoIndustrial/>
+      },
+      {
+        title: "Linguagem de programação",
+        icon: faLaptopCode,
+        handleFunc: handleMateria,
+        component: <LinguagemDeProgramacao/>
+      },
+      {
+        title: "Ciência de dados",
+        icon: faAtom,
+        handleFunc: handleMateria,
+        component: <CienciaDeDados/>
+      }
+    ]
+  }, [])
   
-  const handleDb = ()=> {
-    setMateria(<BancoDeDados/>)
-  }
-
-  const handleRedes = ()=> {
-    setMateria(<RedesDeComputadores/>)
-  }
-
-  const handleAut = ()=> {
-    setMateria(<AutomacaoIndustrial/>)
-  }
-
-  const handleLing = ()=> {
-    setMateria(<LinguagemDeProgramacao/>)
-  }
-
-  const handleCienciaDados = ()=> {
-    setMateria(<CienciaDeDados/>)
-  }
-
   return (
       <motion.div className="sec"
           ref={ref}
           animate={animation}
         >
         <div className='materias'>
-          <div className='block' onClick={handleDb}>
-            <FontAwesomeIcon icon={faDatabase} inverse size='3x' />
-            <b>Banco de dados</b>
-          </div>
-          <div className='block' onClick={handleRedes}>
-            <FontAwesomeIcon icon={faNetworkWired} inverse size='3x' />
-            <b>Redes de computadores</b>
-          </div>
-          <div className='block' onClick={handleAut}>
-            <FontAwesomeIcon icon={faIndustry} inverse size='3x' />
-            <b>Automação indústrial</b>
-          </div>
-          <div className='block' onClick={handleLing}>
-            <FontAwesomeIcon icon={faLaptopCode} inverse size='3x'/>
-            <b>Linguagem de programação</b>
-          </div>
-          <div className='block' onClick={handleCienciaDados}>
-            <FontAwesomeIcon icon={faAtom} inverse  size="3x"/>
-            <b>Ciência de dados</b>
-          </div>
+          {
+            listaMaterias.map((materia)=> <BlockMatter isSelected={materia.title == selectedTitle} title={materia.title} iconn={materia.icon} 
+            handleFunc={()=> {
+                materia.handleFunc(materia.component)
+                setSelectedTitle(materia.title)
+              } 
+            }/>)
+          }
         </div>
         {materia}
       </motion.div>

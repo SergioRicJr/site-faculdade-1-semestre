@@ -5,22 +5,6 @@
     display: flex;
 }
 
-.block {
-    background-color: #3586ff;
-    height: 100px;
-    width: 260px;
-    gap:5px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.block:hover {
-    cursor: pointer;
-}
-
 .text-area {
     flex: 2;
     display: flex;
