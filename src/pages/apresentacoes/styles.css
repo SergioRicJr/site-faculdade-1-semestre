@@ -1,5 +1,45 @@
 .sec {
-    padding: 70px;
-    max-height: 100vh;
-    display: grid;
+    padding: 60px;
+    height: 100%;
+    display: flex;
 }
+
+.block {
+    background-color: #3586ff;
+    height: 140px;
+    width: 270px;
+    gap: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block:hover {
+    cursor: pointer;
+}
+
+.text-area {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+p {
+    word-break: break-all;
+}
+
+.materias { 
+    flex: 1;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
