@@ -1,6 +1,6 @@
-import {FaBroadcastTower, FaDatabase, FaIndustry, FaPython, } from 'react-icons/fa'
+import {FaBroadcastTower, FaDatabase, FaIndustry, FaJava, FaPython} from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAtom} from '@fortawesome/free-solid-svg-icons'
+import { faAtom, faDatabase, faIndustry, faNetworkWired, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 import {BancoDeDados} from './conteudos/bandodedados/BancoDeDados'
 import {useEffect, useRef, useState} from 'react'
@@ -61,19 +61,19 @@ const Apresentacoes = () => {
         >
         <div className='materias'>
           <div className='block' onClick={handleDb}>
-            <FaDatabase fill='white' size="55px" />
-              <b>Banco de dados</b>
+            <FontAwesomeIcon icon={faDatabase} inverse size='3x' />
+            <b>Banco de dados</b>
           </div>
           <div className='block' onClick={handleRedes}>
-            <FaBroadcastTower fill='white' size="55px" />
+            <FontAwesomeIcon icon={faNetworkWired} inverse size='3x' />
             <b>Redes de computadores</b>
           </div>
           <div className='block' onClick={handleAut}>
-            <FaIndustry fill='white' size="55px" />
+            <FontAwesomeIcon icon={faIndustry} inverse size='3x' />
             <b>Automação indústrial</b>
           </div>
           <div className='block' onClick={handleLing}>
-            <FaPython fill='white' size="55px" />
+            <FontAwesomeIcon icon={faLaptopCode} inverse size='3x'/>
             <b>Linguagem de programação</b>
           </div>
           <div className='block' onClick={handleCienciaDados}>
