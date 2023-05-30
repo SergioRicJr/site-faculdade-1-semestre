@@ -17,10 +17,9 @@ const Projetos = () => {
 
         </header>
         <main id='areaCards'>
-        <CardGit/>
-        <CardGit/>
-        <CardGit/>
-        <CardGit/>
+          <CardGit/>
+          <CardGit/>
+          <CardGit/>
           <CardGit/>
           <CardGit/>
           <CardGit/>
