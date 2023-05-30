@@ -15,7 +15,7 @@ const Waves = () => {
     })
 
     return (
-        <section>
+        <section id='waves'>
             <div id='wave1' style={{backgroundPositionX: (positionWave1 + "px")}} className="wave"></div>
             <div id='wave2' style={{backgroundPositionX: (positionWave2 + "px")}} className="wave"></div>
             <div id='wave3' style={{backgroundPositionX: (positionWave3 + "px")}} className="wave"></div>

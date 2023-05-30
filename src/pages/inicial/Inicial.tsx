@@ -7,7 +7,7 @@ const Inicial = () => {
   return (
     <div id='principal'>
         <Header></Header>
-          <main>
+          <main id='mainPrincipal1'>
             <div id='sec1'>
               <h2 id='titulo-pagina'>Primeiro semestre ADS</h2>
               <div className='buttons'>

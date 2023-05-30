@@ -1,0 +1,40 @@
+#cardGit {
+    width: 310px;
+    height: 130px;
+    display: grid;
+    padding: 12px;
+    grid-template-areas: 
+            "title . logo"
+            "link . ."
+            ". . data";
+    background-color:rgb(73, 235, 191);
+    grid-template-rows: 30px 50px 30px;
+    grid-template-columns: 130px 55px 100px;
+    border-radius: 15px;
+}
+
+#tituloRep {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+}
+
+#linkRep {
+    grid-area: link;
+    display: flex;
+    align-items: center;
+}
+
+#dataPubli {
+    grid-area: data;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: end;
+}
+

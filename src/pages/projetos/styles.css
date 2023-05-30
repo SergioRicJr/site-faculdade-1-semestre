@@ -1,6 +1,38 @@
 .github {
-    background-color: blanchedalmond;
-    height: 110vh;
-    width: 100vw;
-    padding: 40px;
+    background: linear-gradient(#ffffff, #3586ff);
+    height: 105vh;
+    padding: 30px;
+}
+
+#headerGit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 45px;
+}
+
+#containerLogo {
+    display: flex;
+    align-items: center;
+    width: 110px;
+}
+
+#contasGit {
+    height: 50px;
+    width: 170px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}   
+
+#areaCards {
+    padding: 40px 0px 0px 0px;
+}
+
+
+#gitHeadEsquerda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
