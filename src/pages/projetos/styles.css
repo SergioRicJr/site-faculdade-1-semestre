@@ -1,7 +1,13 @@
 .github {
     background: linear-gradient(#ffffff, #3586ff);
-    height: 105vh;
+    min-height: 105vh;
     padding: 30px;
+}
+
+#loadReps {
+    width: 120px;
+    height: 30px;
+    margin: 20px 0 0 0;
 }
 
 #headerGit {
@@ -27,7 +33,11 @@
 }   
 
 #areaCards {
-    padding: 40px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    gap: .8vw;
+    justify-content: center;
 }
 
 
@@ -35,4 +45,10 @@
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+#contButtonLoad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

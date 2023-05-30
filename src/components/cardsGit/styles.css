@@ -1,6 +1,6 @@
 #cardGit {
-    width: 310px;
-    height: 130px;
+    width: 360px;
+    height: 135px;
     display: grid;
     padding: 12px;
     grid-template-areas: 
@@ -9,7 +9,7 @@
             ". . data";
     background-color:rgb(73, 235, 191);
     grid-template-rows: 30px 50px 30px;
-    grid-template-columns: 130px 55px 100px;
+    grid-template-columns: 225px 10px 100px;
     border-radius: 15px;
 }
 

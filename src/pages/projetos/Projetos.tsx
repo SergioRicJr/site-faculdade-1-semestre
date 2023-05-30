@@ -17,9 +17,19 @@ const Projetos = () => {
 
         </header>
         <main id='areaCards'>
+        <CardGit/>
+        <CardGit/>
+        <CardGit/>
+        <CardGit/>
+          <CardGit/>
+          <CardGit/>
+          <CardGit/>
+          <CardGit/>
           <CardGit/>
         </main>
-        
+        <div id='contButtonLoad'>
+          <button id='loadReps'>Carregar mais</button>
+        </div>
     </div>
   )
 }
