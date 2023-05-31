@@ -25,7 +25,7 @@ const CardGit = ({title, link, date, description}: any) => {
         </div>
           <div className="gitCardBack">
               <h1>Descrição</h1>
-              <p style={{overflowY:virado?'scroll':'hidden'}}>{description}</p>
+              <p style={{overflowY:virado?'scroll':'hidden'}}>{}</p>
               <FontAwesomeIcon style={{position: 'absolute', right: '12', bottom: '12'}} icon={faArrowRotateLeft}/>
           </div>
       </div>

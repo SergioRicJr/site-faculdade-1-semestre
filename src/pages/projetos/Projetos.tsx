@@ -19,6 +19,7 @@ const Projetos = () => {
       const data = await fetch(`https://api.github.com/users/${userSelect}/repos?per_page=9&page=${pageGit}`)
       const repositories = await data.json()
       setRepositories((prev)=> {
+        console.log(repositories)
         return [...prev, ...repositories]
       })
     }
@@ -43,7 +44,7 @@ const Projetos = () => {
             </select>
         </header>
         <main id='areaCards'>
-          {repositories.map((repository)=> <CardGit key={repository.id} title={repository.name}/>)}
+          {repositories.map((repository)=> <CardGit key={repository.id} title={repository.name} link={repository.html_url} date={repository.created_at.split('T')[0]} description={repository.description}/>)}
         </main>
         <div id='contButtonLoad'>
           {
