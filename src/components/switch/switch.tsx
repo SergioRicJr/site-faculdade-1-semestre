@@ -3,7 +3,7 @@ import './index.css'
 const Switch = () => {
   return (
     <label className='switch'>
-        <input type='checkbox'/>
+        <input id='inputSwitch' type='checkbox'/>
         <span className='slider'/>
     </label>
   )

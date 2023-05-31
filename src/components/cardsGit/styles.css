@@ -1,19 +1,13 @@
 .gitCard {
     width: 360px;
     height: 135px;
-    overflow: visible !important;
     perspective: 1000px;
     /* display: flex; */
 }
 
-.gitCard:hover {
-    cursor: pointer;
-}
-
-.gitCard:hover .gitCardBack,.gitCard:hover  .gitCardFront {
+.gitCardBack:hover, .gitCardFront:hover {
     box-shadow: 0px 0px 20px 1px #f0f0f0d4;
     border: 1px solid rgba(4, 11, 114, 0.333);
-    cursor: pointer;
     border-radius: 15px;
 }
 
@@ -30,14 +24,15 @@
     height: 135px;
     transform-style: preserve-3d;
     transition: all .8s;
-    position: relative;
-    backface-visibility: hidden;
+    /* position: relative;
+    backface-visibility: hidden; */
 }
 
 .gitCardBack, .gitCardFront {
     width: 360px;
     height: 135px;
     border-radius: 15px;
+    transition: all ease .3s;
 }
 
 .gitCardBack > h1 {
@@ -46,9 +41,11 @@
 
 .gitCardBack > p {
     font-size: 13px;
+    text-align: center;
     word-wrap: break-word;
     word-break: break-all;
     height: 60px;
+    width: 336px;
     padding: 3px;
 }
 
@@ -66,7 +63,7 @@
 
 .gitCardBack {
     padding: 12px;
-    position: relative;
+    position: absolute;
     transform: rotateY(180deg);
     top: 0;
     display: flex;
@@ -74,8 +71,9 @@
     justify-content: start;
     background-color: antiquewhite;
     backface-visibility: hidden;
-    pointer-events: visible;
+    pointer-events: all;
     flex-direction: column;
+    z-index: 10 !important;
 }
 
 .gitCardFront {
@@ -85,12 +83,11 @@
             "title . logo"
             "link . ."
             "rotate . data";
-    grid-template-rows: 30px 50px 30px;
+    grid-template-rows: 40px 37px 30px;
     grid-template-columns: 225px 10px 100px;
     background-color:rgba(255, 255, 255, 0.753);
     border: 1px solid rgba(255, 255, 255, 0.222);
     color: rgb(4, 11, 114);
-    transition: all ease .3s;
     /* backdrop-filter: blur(30px); */
     position: absolute;
     backface-visibility: hidden;
@@ -105,6 +102,12 @@
     grid-area: rotate;
     display: flex;
     align-items: end;
+    height: 15px;
+    width: 15px;
+}
+
+.rotateIcon:hover {
+    cursor: pointer;
 }
 
 .arrowDownLeft {
@@ -114,13 +117,16 @@
 #tituloRep {
     grid-area: title;
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-top: 5px;
 }
 
 #linkRep {
+    height: 30px;
+    width: 120.4px;
     grid-area: link;
     display: flex;
-    align-items: center;
+    align-items: end;
     color: rgb(34, 33, 33);
 }
 

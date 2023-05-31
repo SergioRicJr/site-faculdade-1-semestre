@@ -2,6 +2,7 @@ import { FaGithub } from 'react-icons/fa'
 import './styles.css'
 import CardGit from '../../components/cardsGit/CardGit'
 import {useState, useEffect} from 'react'
+import { Spinner } from '@chakra-ui/react'
 
 const Projetos = () => {
   const [pageGit, setPageGit] = useState(1)
@@ -33,22 +34,30 @@ const Projetos = () => {
               <FaGithub size="80px" />
             </div>
             <h2>My Projects</h2>
-            <select id='contasGit' onChange={(event)=> {
-                  setRepositories(()=> [])
-                  setUserSelect(event.target.value)
-                  setPageGit(()=> 1)
-                }
-              }>
-              <option value='SergioRicJr'>@SergioRicJr</option>
-              <option value='SergioNascimento07'>@SergioNascimento07</option>
-            </select>
+            <div id='paiContasGit'>
+              <select id='contasGit' onChange={(event)=> {
+                    setRepositories(()=> [])
+                    setUserSelect(event.target.value)
+                    setPageGit(()=> 1)
+                  }
+                }>
+                <option value='SergioRicJr'>@SergioRicJr</option>
+                <option value='SergioNascimento07'>@SergioNascimento07</option>
+              </select>
+            </div>
         </header>
         <main id='areaCards'>
           {repositories.map((repository)=> <CardGit key={repository.id} title={repository.name} link={repository.html_url} date={repository.created_at.split('T')[0]} description={repository.description}/>)}
         </main>
         <div id='contButtonLoad'>
           {
-            isLoading?<button>Loading</button>:<button id='loadReps' onClick={()=> setPageGit((pagePrev)=> pagePrev+1)}>Mostrar mais</button>
+            isLoading?<Spinner
+            marginTop='20px'
+            thickness='4px'
+            speed='0.65s'
+            emptyColor='gray.200'
+            color='blue.500'
+            size='xl'/>:<button id='loadReps' onClick={()=> setPageGit((pagePrev)=> pagePrev+1)}>Mostrar mais</button>
           }
         </div>
     </div>

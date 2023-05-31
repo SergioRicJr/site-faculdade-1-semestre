@@ -5,11 +5,7 @@
     height: 34px;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-input {
+#inputSwitch {
     position: relative;
     top: 5px;
     left: 10px;

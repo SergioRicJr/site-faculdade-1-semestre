@@ -11,7 +11,7 @@
     height: 30px;
     margin: 20px 0 0 0;
 } */
-button {
+#loadReps {
     margin: 20px 0 0 0;
     width: 140px;
     height: 40px;
@@ -19,30 +19,30 @@ button {
     border-radius: 10px;
     transition: 0.1s;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.762);
+    background-color: white;
     font-size: 17px;
     font-weight: 550;
     font-family: 'Montserrat', sans-serif;
-  }
+}
   
-  button:hover {
-    transform: scale(1.01);
-    
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.437);
-  }
+
+/* #loadReps:hover { */
+    /* transform: scale(1.01); */
+    /* border: 1px solid rgba(0, 0, 0, 0.333); */
+    /* box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.437); */
+/* } */
 
 #headerGit {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-size: 45px;
+    font-size: 62px;
 }
 
 #containerLogo {
     display: flex;
     align-items: center;
-    width: 110px;
+    width: 80px;
+    flex: 1;
 }
 
 #contasGit {
@@ -52,7 +52,13 @@ button {
     background-color: transparent;
     border: none;
     box-shadow: none;
+    float: right;
 }   
+
+#paiContasGit {
+    flex: 1;
+
+}
 
 #areaCards {
     padding: 30px 0px 0px 0px;
@@ -62,6 +68,9 @@ button {
     justify-content: center;
 }
 
+#headerGit > h2 {
+    flex: 1;
+}
 
 #gitHeadEsquerda {
     display: flex;

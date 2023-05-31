@@ -13,9 +13,10 @@
 
 .title {
     text-align: center;
+    font-size: 32px;
 }
 
-p {
+.text-area > p {
     word-break: break-all;
 }
 
