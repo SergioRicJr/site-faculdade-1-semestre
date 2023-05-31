@@ -4,11 +4,33 @@
     padding: 30px;
 }
 
-#loadReps {
+/* #loadReps {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     width: 120px;
     height: 30px;
     margin: 20px 0 0 0;
-}
+} */
+button {
+    margin: 20px 0 0 0;
+    width: 140px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.1s;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.762);
+    font-size: 17px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button:hover {
+    transform: scale(1.01);
+    
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.437);
+  }
 
 #headerGit {
     display: flex;
@@ -25,7 +47,7 @@
 
 #contasGit {
     height: 50px;
-    width: 170px;
+    width: 240px;
     font-size: 18px;
     background-color: transparent;
     border: none;

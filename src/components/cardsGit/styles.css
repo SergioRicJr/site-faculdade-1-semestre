@@ -107,6 +107,10 @@
     align-items: end;
 }
 
+.arrowDownLeft {
+    width: 10px;
+}
+
 #tituloRep {
     grid-area: title;
     display: flex;
