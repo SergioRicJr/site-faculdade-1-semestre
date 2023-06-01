@@ -35,7 +35,8 @@
 }
 
 .muralCertificados {
-    background-color: rgba(0, 0, 0, 0.342);
-    height: 400px;
-    width: 250px;
+    padding: 10px;
+    background-color: #212121d5;
+    height: 200px;
+    width: 600px;
 }

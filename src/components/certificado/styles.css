@@ -1,0 +1,77 @@
+.certificado {
+    border: 2px solid rgb(172, 240, 71);
+    height: 180px;
+    width: 220px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    position: relative;
+    transition: all .9s;
+}
+
+.certificado h4 {
+    color: rgb(255, 255, 255);
+}
+
+.certificado h2 {
+    color: white;
+    position: absolute;
+    width: 206px;
+    font-size: 16px;
+    top: 60px;
+    word-wrap: break-word;
+    transition: all .9s;
+}
+
+.certificado h2:hover {
+    cursor: pointer;
+}
+
+.cimaCertificado svg {
+    height: 50px;
+}
+
+.certificadoEsquerda {
+    width: 176px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    transition:all .9s;
+}
+
+.cimaCertificado {
+    height: 80%;
+}
+
+.baixoCertificado {
+    height: 20%;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+}
+
+.certificadoDireita {
+    background-color: rgb(172, 240, 71);
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 5px;
+}
+
+.containerLink, .containerInfo {
+    
+}
+
+.containerLink, .containerInfo, .containerFechaCert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.776);
+}
+
+.containerLink:hover, .containerFechaCert {
+    cursor: pointer;
+}
