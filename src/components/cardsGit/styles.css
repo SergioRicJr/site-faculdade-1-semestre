@@ -24,8 +24,8 @@
     height: 135px;
     transform-style: preserve-3d;
     transition: all .8s;
-    /* position: relative;
-    backface-visibility: hidden; */
+    position: relative;
+    /* backface-visibility: hidden; */
 }
 
 .gitCardBack, .gitCardFront {
@@ -71,9 +71,10 @@
     justify-content: start;
     background-color: antiquewhite;
     backface-visibility: hidden;
+    /* backface define se ele mesmo sera visivel do outro lado */
     pointer-events: all;
     flex-direction: column;
-    z-index: 10 !important;
+    /* z-index: 10 !important; */
 }
 
 .gitCardFront {
@@ -89,7 +90,7 @@
     border: 1px solid rgba(255, 255, 255, 0.222);
     color: rgb(4, 11, 114);
     /* backdrop-filter: blur(30px); */
-    position: absolute;
+    position: relative;
     backface-visibility: hidden;
 }
  

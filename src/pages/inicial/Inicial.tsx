@@ -2,6 +2,7 @@ import ImgTech from '../../components/imgtech/imgtech'
 import Waves from '../../components/waves/waves'
 import Header from '../../components/header/header'
 import './styles.css'
+import { Button } from '@chakra-ui/react'
 
 const Inicial = () => {
   return (
@@ -11,8 +12,8 @@ const Inicial = () => {
             <div id='sec1'>
               <h2 id='titulo-pagina'>Primeiro semestre ADS</h2>
               <div className='buttons'>
-                <button>Saiba mais</button>
-                <button>Outro botão</button>
+                <Button colorScheme='gray'>Button1</Button>
+                <Button colorScheme='gray'>Button2</Button>
               </div>
             </div>
             <ImgTech/>
