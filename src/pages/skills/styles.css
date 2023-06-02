@@ -39,4 +39,11 @@
     background-color: #212121d5;
     height: 200px;
     width: 600px;
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+}
+
+.muralCertificados::-webkit-scrollbar {
+    display: none;
 }

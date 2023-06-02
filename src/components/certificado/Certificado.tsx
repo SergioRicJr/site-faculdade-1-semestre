@@ -7,7 +7,7 @@ import { faArrowLeft, faInfo, faLink } from '@fortawesome/free-solid-svg-icons'
 import {useState} from 'react'
 
 const Certificado = ({svgIcon, titulo, link, listaConteudos, cargaHoraria}: any) => {
-  const [estadoAberto, setEstadoAberto] = useState(true)
+  const [estadoAberto, setEstadoAberto] = useState(false)
   
   return (
       <div className='certificado' style={{width: estadoAberto?"220px":"44px"}} onClick={()=> estadoAberto?null:setEstadoAberto(true)}>
