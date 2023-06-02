@@ -47,7 +47,7 @@
     display: flex;
     gap: 5px;
     overflow-x: scroll;
-    overflow-y: hidden;
+    box-shadow: inset 0px 0px 16px 5px rgba(255, 255, 255, 0.386);
 }
 
 .muralCertificados::-webkit-scrollbar {
@@ -69,10 +69,14 @@
     border-radius: 30px;
 }
 
+.iconeDescer:hover {
+    cursor: pointer;
+}
+
 .movIconDown {
     color: white;
     height: 25px;
-    animation: flutuar ease-in-out 2s infinite;
+    animation: flutuar ease-in-out 1s infinite;
 }
 
 @keyframes flutuar {

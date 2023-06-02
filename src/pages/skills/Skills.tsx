@@ -97,7 +97,10 @@ const Skills = () => {
               </section>
           </main>
           <div style={{display: "flex", justifyContent:"center"}}>
-            <div className="iconeDescer">
+            <div className="iconeDescer" onClick={()=>{
+                console.log(document.querySelector(".mainContato")?.scrollIntoView({behavior: 'smooth'}))
+              } 
+            }>
               <FontAwesomeIcon className='movIconDown' icon={faAnglesDown} />
             </div>
           </div>

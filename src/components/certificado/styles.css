@@ -13,10 +13,10 @@
 }
 
 .certificado h2 {
-    color: white;
+    color: rgb(255, 255, 255);
     position: absolute;
     width: 206px;
-    font-size: 16px;
+    font-size: 18px;
     top: 60px;
     word-wrap: break-word;
     transition: ease-in-out .5s;
