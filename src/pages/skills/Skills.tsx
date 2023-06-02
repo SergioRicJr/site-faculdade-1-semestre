@@ -1,5 +1,6 @@
 import { Button } from '@chakra-ui/react'
 import './styles.css'
+import BarraSkill  from '../../components/barraSkill/BarraSkill'
 
 const Skills = () => {
   return (
@@ -10,14 +11,7 @@ const Skills = () => {
           </header>
           <main id='mainSkills'>
               <section id='skills'>
-                  <div className="painelSkills">
-
-                  </div>
-              </section>
-              <section id='certificados'>
-                  <div className="muralCertificados">
-                    
-                  </div>
+                  <BarraSkill/>
               </section>
           </main>
       </div>
