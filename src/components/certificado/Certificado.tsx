@@ -14,7 +14,7 @@ const Certificado = ({svgIcon, titulo, link, listaConteudos, cargaHoraria}: any)
         <div className="certificadoEsquerda" style={{width:estadoAberto?"176px":"0px", padding: estadoAberto?"5px":"0px"}}>
           <div className="cimaCertificado">
             {estadoAberto?svgIcon:null}
-            <h2 className='tituloCertificado' style={{width: estadoAberto?"206px":"177px",fontSize: estadoAberto?"16px":"13px",color: estadoAberto?"white":"black",right: estadoAberto?"":"-66px",top: estadoAberto?"60px":"68px", transform: estadoAberto?"":"rotate(-90deg)"}}>{titulo}</h2>
+            <h2 className='tituloCertificado' style={{width: estadoAberto?"206px":"177px",fontSize: estadoAberto?"16px":"13px",right: estadoAberto?"":"-66px",top: estadoAberto?"60px":"68px", transform: estadoAberto?"":"rotate(-90deg)"}}>{titulo}</h2>
           </div>
           {estadoAberto?(
               <div className="baixoCertificado">

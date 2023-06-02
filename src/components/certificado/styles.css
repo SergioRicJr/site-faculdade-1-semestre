@@ -1,11 +1,11 @@
 .certificado {
-    border: 2px solid rgb(172, 240, 71);
+    border: 2px solid #3586ff;
     height: 180px;
     width: 220px;
     background-color: rgb(46, 46, 46);
     display: flex;
     position: relative;
-    transition: all .9s;
+    transition: ease-in-out .5s;
 }
 
 .certificado h4 {
@@ -19,7 +19,7 @@
     font-size: 16px;
     top: 60px;
     word-wrap: break-word;
-    transition: all .9s;
+    transition: ease-in-out .5s;
 }
 
 .certificado h2:hover {
@@ -35,7 +35,7 @@
     padding: 5px;
     display: flex;
     flex-direction: column;
-    transition:all .9s;
+    transition: ease-in-out .5s;
 }
 
 .cimaCertificado {
@@ -50,7 +50,7 @@
 }
 
 .certificadoDireita {
-    background-color: rgb(172, 240, 71);
+    background-color: #3586ff;
     width: 44px;
     display: flex;
     justify-content: center;

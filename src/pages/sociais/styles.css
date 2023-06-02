@@ -3,4 +3,44 @@
     background: url("../../assets/gggrain.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
+
+.tituloContato {
+    height: 120px;
+    font-size: 70px;
+}
+
+.redesSociaisCenter {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridRedesSociais {
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-areas: 
+    "git vazio1 insta"
+    "vazio2 central vazio3"
+    "whats vazio4 face";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+}
+
+.cont, .espacoVazio, .central {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.879);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 1px 7px 1px #d0cfcf;
+}
+

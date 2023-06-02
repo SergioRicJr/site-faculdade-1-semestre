@@ -1,6 +1,9 @@
 import { Button } from '@chakra-ui/react'
 import './styles.css'
 import Certificado from '../../components/certificado/Certificado'
+import { useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesDown, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const listaCertificados = [
   {
@@ -66,6 +69,20 @@ const listaCertificados = [
 ]
 
 const Skills = () => {
+  
+  // useEffect(()=> {
+  //   const intObserve = new IntersectionObserver((entries)=> {
+  //     console.log("Estamos observando", entries)
+      
+  //     if (entries.some((entry)=> entry.isIntersecting)) {
+  //       console.log("Essa mensagem é para dizer que o elemento está visivel")
+  //     }
+  //   })
+
+  //   intObserve.observe(document.querySelectorAll(".certificado")[0] as Element)
+  //   return ()=> intObserve.disconnect()
+  // })
+  
   return (
     <>
       <div id='principalSkills'>
@@ -79,10 +96,13 @@ const Skills = () => {
                   </div>
               </section>
           </main>
+          <div style={{display: "flex", justifyContent:"center"}}>
+            <div className="iconeDescer">
+              <FontAwesomeIcon className='movIconDown' icon={faAnglesDown} />
+            </div>
+          </div>
       </div>
-      <div style={{display: "flex", justifyContent:"center"}}>
-      <Button>ddd</Button>
-      </div>
+      
     </>
   )
 }
