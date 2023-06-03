@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 
-.cimaCertificado svg {
+.cimaCertificado svg, .cimaCertificado img {
     height: 50px;
 }
 
