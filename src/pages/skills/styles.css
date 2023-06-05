@@ -1,6 +1,7 @@
 #principalSkills {
     min-height: 100vh;
-    background: linear-gradient(#3586ff, rgb(255, 255, 255));
+    background: linear-gradient(#3586ff,#c7dcfa, rgba(255, 255, 255, 0.438));
+    margin-bottom: 120px;
 }
 
 #titleSkills {
@@ -15,18 +16,80 @@
     width: 100%;
     min-height: 80vh;
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    align-items: center; 
+    gap: 60px;
 }
 
 #skills {
-    width: 100%;
+    flex: 2;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .painelSkills {
     background-color: rgba(0, 0, 0, 0.778);
     height: 400px;
     width: 700px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+
+#certificados {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.muralCertificados {
+    padding: 10px;
+    padding-top: 23px;
+    padding-bottom: 0;
+    background-color: #212121d5;
+    height: 230px;
+    width: 900px;
+    max-width: 80vw;
+    margin: 0 20px;
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-shadow: inset 0px 0px 16px 5px rgba(255, 255, 255, 0.386);
+}
+
+.muralCertificados::-webkit-scrollbar {
+   background: transparent;
+}
+
+.muralCertificados::-webkit-scrollbar-thumb {
+    background: rgb(161, 159, 159);
+    border-radius: 10px;
+}
+
+.iconeDescer {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 15vh;
+}
+
+.iconeDescer:hover {
+    cursor: pointer;
+}
+
+.movIconDown {
+    color: white;
+    height: 25px;
+    animation: flutuar ease-in-out 1s infinite;
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0px);
+    } 50% {
+        transform: translateY(3px);
+    }
 }
