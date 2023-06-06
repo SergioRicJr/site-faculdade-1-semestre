@@ -216,10 +216,81 @@ const listaCertificados = [
     link: "https://www.dio.me/certificate/5A48F20A/share",
     cargaHoraria: "34h",
     listaConteudos: [
-      
+      "React",
+      "TypesScript",
+      "Styled components",
+      "Hooks",
+      "Formulários com react",
+      "Introdução ao next"
+    ]
+  },
+  {
+    titulo: "Formação Java Developer",
+    svgIcon: <img src='https://hermes.dio.me/tracks/da6041a9-80ef-409e-bd50-5e7be4dfadf6.png'></img>,
+    link: "https://www.dio.me/certificate/5A48F20A/share",
+    cargaHoraria: "76h",
+    listaConteudos: [
+      "Escopo e estruturas de controle",
+      "Tratamento de exceções",
+      "Programação orientada a objetos",
+      "Estrutura de dados",
+      "Java Collections",
+      "Gerenciamento de dependências e build",
+      "S.O.L.I.D",
+      "Entrada e saída de arquivos",
+      "Testes unitários",
+      "Spring Framework",
+      "Spring Boot",
+      "Spring Web",
+      "Spring Security"
+    ]
+  },
+  {
+    titulo: "Formação HTML Web Developer",
+    svgIcon: <img src='https://hermes.digitalinnovation.one/tracks/62ed1f1d-8d76-4bbc-905f-e73d20cb82f5.png'></img>,
+    link: "https://www.dio.me/certificate/373CD6B0",
+    cargaHoraria: "21h",
+    listaConteudos: [
+      "Introdução ao HTML",
+      "HTML semântico",
+      "formulários e tabelas"
+    ]
+  },
+  {
+    titulo: "Formação HTML Web Developer",
+    svgIcon: <img src='https://hermes.digitalinnovation.one/tracks/62ed1f1d-8d76-4bbc-905f-e73d20cb82f5.png'></img>,
+    link: "https://www.dio.me/certificate/373CD6B0",
+    cargaHoraria: "21h",
+    listaConteudos: [
+      "Introdução ao HTML",
+      "HTML semântico",
+      "formulários e tabelas"
+    ]
+  },
+  {
+    titulo: "Introdução a rede de computadores",
+    svgIcon: <img src='https://lms.ev.org.br/mpls/Web/Cds/CourseImage.ashx?t=i&c=392&ct=WEB'></img>,
+    link: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?%2bWEDv%2fkyvlP960N7Sk09oWNmbqkWculi",
+    cargaHoraria: "15h",
+    listaConteudos: [
+      "Rede de computadores",
+      "LANs, placa de rede, conectores e cabeamento",
+      "Protocolo de redes"
+    ]
+  },
+  {
+    titulo: "Aprimoramento profissional",
+    svgIcon: '',
+    link: "https://lms.ev.org.br/mpls/Web/Lms/Student/PrintCertificateDialog.aspx?%2bWEDv%2fkyvlP960N7Sk09oWNmbqkWculi",
+    cargaHoraria: "48h",
+    listaConteudos: [
+      "Desenvolvimento profissional",
+      "Atendimento ao público",
+      "Postura e imagem profissional",
+      "Organização pessoal",
+      "Comunicação empresarial"
     ]
   }
-  
 ]
 
 const listaAtividades = [
