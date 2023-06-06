@@ -43,7 +43,6 @@
     border-radius: 25px;
     color: blue;
     border: 2px solid rgb(61, 61, 61);
-    transition: all 4s;
     /* outline: none;
     -webkit-appearance: none;
     overflow: hidden; */
@@ -53,7 +52,6 @@
     background-color: rgb(110, 216, 44);
     height: 100%;
     border-radius: 25px;
-    transition: ease-in-out 3px;
 }
 
 .progressSkill {

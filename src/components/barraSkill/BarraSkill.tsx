@@ -1,6 +1,5 @@
 import {useEffect} from 'react'
 import './styles.css'
-import { Progress } from '@chakra-ui/react'
 import { motion, useAnimation } from 'framer-motion'
 
 const BarraSkill = ({idClass,img, nomeHabilidade, nivelNome, valorProgesso}:any) => {
@@ -12,7 +11,7 @@ const BarraSkill = ({idClass,img, nomeHabilidade, nivelNome, valorProgesso}:any)
       if(entries.some((entry)=> entry.isIntersecting)){
         animateMy.start({
           width: `${valorProgesso}%`,
-          transition: {duration: 1.7}
+          transition: {duration: 1.2}
         })
       } else {
         animateMy.start({
