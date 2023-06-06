@@ -20,7 +20,6 @@ const Projetos = () => {
       const data = await fetch(`https://api.github.com/users/${userSelect}/repos?per_page=9&page=${pageGit}`)
       const repositories = await data.json()
       setRepositories((prev)=> {
-        console.log(repositories)
         return [...prev, ...repositories]
       })
     }

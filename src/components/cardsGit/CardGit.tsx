@@ -8,7 +8,6 @@ import { escape } from 'querystring'
 const CardGit = ({title, link, date, description}: any) => {
   const [virado, setVirado] = useState(false)
 
-  console.log("renderizando " + title)
   return (
     <div className="gitCard">
       <div className="flipper" style={{transform: virado?'rotateY(-180deg)':''}}>
@@ -19,7 +18,7 @@ const CardGit = ({title, link, date, description}: any) => {
             </div>
             <a target='_blank' id='linkRep' href={link}>Ver repositório</a>
             <div className="rotateIcon" onClick={()=> setVirado(virado?false:true)} style={{position: 'absolute', left: '0px', bottom: '0px'}}>
-              <FontAwesomeIcon icon={faArrowRotateRight} onClick={()=> console.log("cliquei")}/>
+              <FontAwesomeIcon icon={faArrowRotateRight}/>
             </div>
             <p id='dataPubli'>{date}</p>
         </div>

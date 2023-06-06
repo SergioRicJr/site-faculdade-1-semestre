@@ -1,7 +1,6 @@
 .profileSkill {
     height: 150px;
     width: 600px;
-    background-color: bisque;
     display: flex;
 }
 
@@ -12,6 +11,49 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+
+.logoSkill h2 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoSkillImg {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoSkillImg > * {
+    height: 90px;
+}
+
+.logoSkill p {
+    height: 20%;
+    text-align: center;
+}
+
+.barraProgresso {
+    height: 25px;
+    width: 85%;
+    border-radius: 25px;
+    color: blue;
+    border: 2px solid rgb(61, 61, 61);
+    transition: all 4s;
+    /* outline: none;
+    -webkit-appearance: none;
+    overflow: hidden; */
+}
+
+.valueProgresso {
+    background-color: rgb(110, 216, 44);
+    height: 100%;
+    border-radius: 25px;
+    transition: ease-in-out 3px;
 }
 
 .progressSkill {

@@ -11,8 +11,6 @@ import { CienciaDeDados } from './conteudos/cienciadados/CienciaDeDados'
 import { motion, useInView, useAnimation} from 'framer-motion'
 import BlockMatter from '../../components/matter/BlockMatter'
 
-
-
 const Apresentacoes = () => {
   const [materia, setMateria] = useState<JSX.Element>(<BancoDeDados/>)
   const ref = useRef(null)
@@ -34,12 +32,10 @@ const Apresentacoes = () => {
         x: "-80vw"
       })
     }
-    console.log(inView)
   }, [inView])
 
   const handleMateria = (component: JSX.Element) => {
     setMateria(component)
-    
   }
 
   const listaMaterias = useMemo(()=> {
