@@ -18,11 +18,12 @@
 }
 
 .text-area > div {
-    word-break: break-all;
+    word-break: normal;
 }
 
 .conteudoMateria {
     overflow-y: auto;
+    padding: 21px;
 }
 
 .materias { 
@@ -43,10 +44,27 @@
     padding: 10px;
 }
 
-.janelaProjeto {
+.projeto {
     display: flex;
     padding-top: 10px;
     width: 100%;
     background-color: aquamarine;
+}
+
+.imgProjeto {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descricaoProjeto {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
 }
 

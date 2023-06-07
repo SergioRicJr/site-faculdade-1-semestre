@@ -292,14 +292,17 @@ export const BancoDeDados = () => {
           </Accordion>
           <div className="projetosMateria">
             <h1>Projetos da matéria</h1>
-            <div className='janelaProjeto'>
               <div className='projeto'>
-                <div className='ImgProjeto'></div>
-                <div className='Descrição projeto'>
+                <div className='imgProjeto'>
+                  meuTexto
+                </div>
+                <div className='descricaoProjeto'>
                   <h1>BD Copa do mundo</h1>
+                  <p>
+                    Meu texto descrevendo esse maravilhoso e magnifico projeto muito interessante e bom
+                  </p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
     </div>
