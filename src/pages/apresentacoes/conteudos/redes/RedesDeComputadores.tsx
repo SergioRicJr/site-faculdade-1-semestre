@@ -222,6 +222,26 @@ export const RedesDeComputadores = () => {
               </ul>
             </li>
           </ul>
+          <h1>QoS – Uso de ferramentas para garantir qualidade e desempenho no tráfego em redes.</h1>
+          <h1>ToS – Define nível de prioridade para tráfego.</h1>
+          <h1>VLAN (Rede local virtual) – Divide a LAN em redes diferentes dentro dela.</h1>
+          <h1>DNS (Domain Name System) – Sistema de distribuição, gestão e tradução de nomes para endereço IP.</h1>
+          <h1>Comandos de rede:</h1>
+          <ul>
+            <li>Ping – Envia pacotes para o endereço IP desejado</li>
+            <li>Tracert – Rastreia o caminho dos pacotes até um endereço IP</li>
+            <li>Configuração de roteador:
+              <ul>
+                <li>Enable – Para habilitar roteador</li>
+                <li>No shutdown – Habilita a interface</li>
+                <li>Ip address – Configura IP e máscara.</li>
+                <li>Wr – Salva as configurações.</li>
+                <li>Exit – Sai do modo configuração</li>
+                <li>Ip Route – Define rota padrão</li>
+                <li>Interface – Seleciona certa interface</li>
+              </ul>
+            </li>
+          </ul>
         </div>
     </div>
   )
