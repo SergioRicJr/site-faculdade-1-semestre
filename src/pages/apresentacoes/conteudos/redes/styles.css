@@ -1,0 +1,15 @@
+li {
+    padding-left: 10px;
+}
+ul {
+    padding-left: 17px;
+}
+
+.imgTopograf {
+    margin: 15px 0;
+    width: 600px;
+    height: 340px;
+    background-image: url(../../../../assets/9696006245e0d233d93d89d98464f1f8.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
