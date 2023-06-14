@@ -1,4 +1,8 @@
 import './styles.css'
+import zimbab from '../../../../assets/cazaqZimbab_inc.png'
+import videoTerminado from '../../../../assets/2redes.mp4'
+import switchHub from '../../../../assets/switchHub.mp4'
+import { Button } from '@chakra-ui/react'
 
 export const RedesDeComputadores = () => {
   return (
@@ -242,6 +246,45 @@ export const RedesDeComputadores = () => {
               </ul>
             </li>
           </ul>
+          <div className="areaProjetos">
+            <div className="projeto1">
+              <h1>Diferença entre Switch e HUB</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>
+                  Este projeto traz a aplicação do conceito aprendido em sala de aula, sobre a diferença entre HUB e Switch, pois, ao conectar aparelhos neles, e enviar mensagem de um para outro, é possível observar que o Switch envia a mensagem somente para o destinatário, pois ele decora o endereço de cada dispositivo, já o HUB não faz isso, o que acaba sendo menos seguro.
+                </p>
+                <video controls={true} width={'100%'}>
+                  <source src={switchHub}/>
+                </video>
+              </div>
+            </div>
+            <div className="projeto1">
+              <h1>Conexão entre 2 redes diferentes</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>
+                  Neste projeto foi feita a conexão de duas LANs,  onde foi utilizado o conceito de gateway padrão, e a mudança de rede privada para pública, para que haja esse envio e resposta de mensagem, além de utilizar a definição de rota estática.
+                </p>
+                <video controls={true} width={'100%'}>
+                  <source src={videoTerminado}/>
+                </video>
+              </div>
+            </div>
+            <div className="projeto1">
+              <h1>Projeto de simulação de internet</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>
+                  Este é um projeto ainda em desenvolvimento, que não foi terminado em sala de aula, porem, muitas funcionalidades já foram aplicadas, onde conceitos como a distribuição dinâmicade IP, através do servidor DHCP, trabalhando com definição de rotas, servidor DNS e tabela de roteamento. Foi aplicado também a ideia de DMZ para que uma página HTML pudesse ser acessada por dispositivos de outra rede.
+                </p>
+                <img src={zimbab} alt="" />
+              </div>
+            </div>
+            <div className="projeto1">
+              <Button><a href="https://github.com/SergioRicJr/projetos_de_redes" target='_blank'>Repositório</a></Button>
+            </div>
+          </div>
         </div>
     </div>
   )

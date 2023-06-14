@@ -1,4 +1,9 @@
 import React from 'react'
+import ardSensor from '../../../../assets/arduinoSensor.mp4'
+import ardBotao from '../../../../assets/arduinoBotao.mp4'
+import ardLuzes from '../../../../assets/arduinoLuzes.mp4'
+import ardSemaforo from '../../../../assets/arduinoSemaforo.mp4' 
+import { Button } from '@chakra-ui/react'
 
 export const AutomacaoIndustrial = () => {
   return (
@@ -194,6 +199,55 @@ export const AutomacaoIndustrial = () => {
                   <li>Precisão</li>
               </ul>
           </ul>
+          <div className="areaProjetos">
+            <div className="projeto1">
+                <h1>Arduíno com sensor ultrasônico</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>  
+                <p>Projeto com arduíno deselvolvido para simular a medição de distância através do sensor ultrasônico, que utiliza o som para atingir objetos e a partir da reverberação apresentar a distância entre o sensor e o objeto.</p>
+                <video controls={true}>
+                  <source width={'100%'} src={ardSensor}/>
+                </video>
+              </div>
+            </div>
+            <div className="projeto1">
+                <h1>Arduíno simulando semáforo</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>  
+                <p>Esse projeto foi desenvolvido principalmente para aplicar a lógica de programação em C e como ela é usada para arduínos, onde foram usadas a leitura e escrita sobre os pinos, funções, loop e operadores condicionais. O projeto no final acaba funcionando da seguinte forma, os semáforos representando a passagem dos carros, estão abertos, quando o botão é apertado, primeiro o sinla fica amarelo, depois ficam vermelho e só então o sinal de pedestres é liberado, essa verificação ocorre e é colocado o tempo certo para que cada instrução ocorra.</p>
+                <video controls={true}>
+                  <source width={'100%'} src={ardSemaforo}/>
+                </video>
+              </div>
+            </div>
+            <div className="projeto1">
+                <h1>Arduíno com sequência de luzes</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>  
+                <p>Neste projeto foi feito um loop onde cada luz fica ligada e apaga, então a próxima, e sucessivamente.</p>
+                <video controls={true}>
+                  <source width={'100%'} src={ardLuzes}/>
+                </video>
+              </div>
+            </div>
+            <div className="projeto1">
+                <h1>Arduíno com botão para ligar luz</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>  
+                <p>Neste primeiro projeto realizado, iniciamos os conceitos de arduíno. O led pisca enquanto o botão estiver sendo pressionado</p>
+                <video controls={true}>
+                  <source width={'100%'} src={ardBotao}/>
+                </video>
+              </div>
+            </div>
+            <div className="projeto1">
+              <Button><a href="https://github.com/SergioRicJr/automacao_industrial" target='_blank'>Conteúdos</a></Button>
+              <hr style={{backgroundColor: 'black', height: '2px', width: "200px"}}/>
+              <p>Links:</p>
+              <ul>
+                <li><a href="https://www.tinkercad.com/things/230PcwoFKtK-funky-jaiks-kasi/editel?sharecode=CVz1TD8GkO_i45Br2uNObNyUqleW9FwMj-DF-yDhDPc" target='_blank'>https://www.tinkercad.com/things/230PcwoFKtK-funky-jaiks-kasi/editel?sharecode=CVz1TD8GkO_i45Br2uNObNyUqleW9FwMj-DF-yDhDPc</a></li>
+                <li><a href="https://www.tinkercad.com/things/3nejHCcrsdA-luzes-piscando/editel?sharecode=jq7FUeHRsHWvr2VP4fF9jjrJmOX3KAXF4x7qfwwMlUU" target='_blank'>https://www.tinkercad.com/things/3nejHCcrsdA-luzes-piscando/editel?sharecode=jq7FUeHRsHWvr2VP4fF9jjrJmOX3KAXF4x7qfwwMlUU</a></li>
+                <li><a href="https://www.tinkercad.com/things/5t3mjpJGTKi-terrific-waasa-jaban/editel?sharecode=dfGIgNoNB6nS1eDM00SbXjx-re_DpVG53ZeodDoNsiw" target='_blank'>https://www.tinkercad.com/things/5t3mjpJGTKi-terrific-waasa-jaban/editel?sharecode=dfGIgNoNB6nS1eDM00SbXjx-re_DpVG53ZeodDoNsiw</a></li>
+                <li><a href="https://www.tinkercad.com/things/gqFms3SH1yi-copy-of-smashing-vihelmo-amur/editel?sharecode=ZTwx8u-nn3W1li0TzmVHtzgqdvJ8TV_2WOyLWTpt7no" target='_blank'>https://www.tinkercad.com/things/gqFms3SH1yi-copy-of-smashing-vihelmo-amur/editel?sharecode=ZTwx8u-nn3W1li0TzmVHtzgqdvJ8TV_2WOyLWTpt7no</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
     </div>
   )
