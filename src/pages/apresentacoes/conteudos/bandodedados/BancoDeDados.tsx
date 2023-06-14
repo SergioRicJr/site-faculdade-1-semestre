@@ -1,5 +1,10 @@
 import { ListItem, UnorderedList, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel, List, AccordionProvider } from '@chakra-ui/react'
 import './styles.css'
+import diagramaAgencia from '../../../../assets/Captura_de_tela_2023-05-03_200542.png'
+import c1 from '../../../../assets/Captura de Tela (54).png'
+import c2 from '../../../../assets/Captura de Tela (55).png'
+import c3 from '../../../../assets/Captura de Tela (56).png'
+import c4 from '../../../../assets/Captura de Tela (57).png' 
 
 export const BancoDeDados = () => {
   return (
@@ -143,6 +148,90 @@ export const BancoDeDados = () => {
             <li>2FN (Segunda forma normal) – A entidade não pode possuir dependências parciais.</li>
             <li>3FN (Terceira forma normal) – A entidade não pode possuir dependências transitivas.</li>
           </ul>
+          <div className="areaProjetos">
+            <div className="projeto1">
+                <h1>Projeto agência</h1>
+                <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>Projeto de modelagem de banco dados, diagramação e criação do modelo físico, onde foram aplicados diversos comandos DML, DDL e DQL, criação de sequências para personalisar o autoincrement de alguns campos, foi usado também enum para limitar as opções de inserção em certo campo, e selects usando group by, para agrupar tabela por determinado campo, subquery e diferentes joins, que permitem unir tabelas e seus resultados de diversas formas</p>
+                  <h2 style={{marginTop: '10px'}}>MER</h2>
+                  <p>Exercício 3 – Companhia
+                    Faça o esquema conceitual para o banco de dados de uma companhia. A
+                    companhia é organizada em departamentos. Cada departamento tem um nome e um
+                    número. Além disto, um departamento controla vários projetos, cada um dos quais
+                    com um nome, um número de identificação e o período de tempo no qual deve ser
+                    desenvolvido. Na referida companhia, cada projeto somente pode ser desenvolvido
+                    por um departamento específico.
+                    Existem somente três tipos de funcionários que trabalham na companhia:
+                    pesquisador, secretário e de limpeza. Para os pesquisadores, deseja-se armazenar: o
+                    nome, o endereço, o sexo, a data de aniversário, o salário e a área de atuação. Para os
+                    secretários, deseja-se armazenar: o nome, o endereço, o sexo, a data de aniversário, o
+                    salário e o grau de escolaridade. Já para os funcionários de limpeza, deseja-se
+                    armazenar: o nome, o endereço, o sexo, a data de aniversário, o salário, o cargo e a
+                    jornada de trabalho. Os cargos dos funcionários responsáveis pela limpeza são
+                    hierárquicos. Assim, deseja-se armazenar também, para cada funcionário de limpeza,
+                    informações sobre o funcionário de limpeza que o gerencia. Os funcionários da
+                    companhia são identificados por meio de um código de identificação, e podem estar
+                    associados a apenas um único departamento.
+                    Funcionários que são pesquisadores podem trabalhar em diversos projetos,
+                    independentemente desses projetos estarem sendo desenvolvidos no mesmo
+                    departamento no qual o empregado está associado. Deve-se armazenar o número de
+                    horas semanais trabalhadas por cada pesquisador em cada projeto no qual ele trabalha.
+                    Deve-se armazenar também informações sobre os dependentes de cada funcionário
+                    para propósitos de ajuda família. Deve-se armazenar o nome, o sexo e a data de
+                    aniversário, além do grau de parentesco com o funcionário
+                  </p>
+                </div>
+                <h2 style={{marginTop: '10px'}}>DER</h2>
+                <img src={diagramaAgencia} alt="" />
+                <p>Repositório GIT com códigos de criação do BD</p>
+                <a href="https://github.com/SergioRicJr/projeto_banco_dados" target='_blank'>https://github.com/SergioRicJr/projeto_banco_dados</a>
+            </div>
+            <div className="projeto1">
+              <h1>Copa Score Seleções</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>Banco de dados de seleções da copa do mundo e suas pontuações de habilidade segunda a FIFA. Foi utilizado o banco MySQL, e algumas funcionalidades diferentes como o concat que permite concatenar valores em um campo. A tabela foi feita de um modo diferente do que eu pretendia usar para que eu mesmo pudesse treinar criação de query mais avançada usando função "max", case when e group by, para ordenar e apresentar os dados de formas diferentes.</p>
+              </div>
+              <p style={{marginTop: '10px'}}>Repositório GIT:</p>
+              <a href="https://github.com/SergioRicJr/Copa_python_e_sql" target='_blank'>https://github.com/SergioRicJr/Copa_python_e_sql</a>
+            </div>
+            <div className="projeto1">
+              <h1>Diagramas de exercicios feitos em sala</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>
+                  Exercicios feitos em sala de aula para praticar as habilidades de diagramação de banco de dados.
+                </p>
+              </div>
+              <p style={{marginTop: '10px'}}>Repositório GIT:</p>
+              <a href="https://github.com/SergioRicJr/diagramas_bd_exercicios" target='_blank'>https://github.com/SergioRicJr/diagramas_bd_exercicios</a>
+            </div>
+            <div className="projeto1">
+              <h1 style={{textAlign: 'center'}}>Diagrama da normalização do banco de dados do titanic</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>
+                  Exercicio feito em sala para a normalização de uma tabela que possui dados do Titanic.
+                </p>
+              </div>
+              <p style={{marginTop: '10px'}}>Repositório GIT:</p>
+              <a href="https://github.com/SergioRicJr/titanic_normalizado" target='_blank'>https://github.com/SergioRicJr/titanic_normalizado</a>
+            </div>
+            <div className="projeto1">
+              <h1 style={{textAlign: 'center'}}>Banco de dados de um site de receitas feito com ORM</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição</h2>
+                <p>
+                  Esse é um projeto de back-end para um site de receitas, onde há tabelas de usuário, receita, tipos de receita, ingredientes, entidade associativa de ingredientes e receitas, notas e passos das receitas. Todas as entidades devidamente relacionadas e funcionando para armazenar todas as informações seguindo as regras de normalização de banco de dados. Foi usado para isso o ORM Prisma, que através do back-end em TypeScript, gerou esse banco de dados, e possibilitou seu versionamento de forma mais simples e segura.
+                </p>
+                <p style={{marginTop: '10px'}}>Código de criação presente no caminho 'back-receitas/prisma/schema.prisma',  e códigos em SQL, presentes em 'back-receitas/prisma/migrations'</p>
+
+              </div>
+              <p style={{marginTop: '10px'}}>Repositório GIT:</p>
+              <a href="https://github.com/SergioNascimento07/site-receitas" target='_blank'>https://github.com/SergioNascimento07/site-receitas</a>
+            </div>
+          </div>
           {/* <Accordion allowMultiple>
             <AccordionItem className='tituloConteudo'>
               <AccordionButton style={{display: "flex", justifyContent: "space-between"}}>
