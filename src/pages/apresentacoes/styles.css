@@ -26,6 +26,17 @@
     padding: 21px;
 }
 
+.conteudoMateria::-webkit-scrollbar {
+    background: rgb(219, 219, 219);
+    border-radius: 10px;
+ }
+ 
+ .conteudoMateria::-webkit-scrollbar-thumb {
+     background: #3586ff;
+     border-radius: 10px;
+ }
+ 
+
 .materias { 
     flex: 1;
     max-height: 100vh;

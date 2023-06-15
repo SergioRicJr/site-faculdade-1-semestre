@@ -11,10 +11,6 @@ const Inicial = () => {
           <main id='mainPrincipal1'>
             <div id='sec1'>
               <h2 id='titulo-pagina'>Primeiro semestre ADS</h2>
-              <div className='buttons'>
-                <Button colorScheme='gray'>Button1</Button>
-                <Button colorScheme='gray'>Button2</Button>
-              </div>
             </div>
             <ImgTech/>
           </main>

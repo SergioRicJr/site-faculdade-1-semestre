@@ -27,7 +27,7 @@ const Projetos = () => {
   }, [pageGit, userSelect])
   
   return (
-    <div className='github'>
+    <div className='github' id='gitHub'>
         <header id='headerGit'>
             <div id='containerLogo'>
               <FaGithub size="80px" />
