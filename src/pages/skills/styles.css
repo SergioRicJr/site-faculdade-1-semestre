@@ -38,7 +38,9 @@
 #certificados {
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 70px;
 }
 
 .muralCertificados {
@@ -55,7 +57,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     box-shadow: inset 0px 0px 16px 5px rgba(255, 255, 255, 0.386);
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .muralCertificados::-webkit-scrollbar {

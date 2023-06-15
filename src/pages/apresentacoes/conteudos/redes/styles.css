@@ -1,8 +1,8 @@
-li {
+.text-area li {
     padding-left: 10px;
 }
-ul {
-    padding-left: 17px;
+.text-area ul {
+    padding-left: 20px;
 }
 
 .imgTopograf {

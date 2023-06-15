@@ -184,6 +184,14 @@ export const CienciaDeDados = () => {
                 <Button marginTop={'10px'}><a style={{height: '100%', width: '100%',display: 'flex', justifyContent: 'center', alignItems: 'center'}} href="https://colab.research.google.com/drive/1Td17FjZsEdnMAsQ7_nQ1qL2f5rcNMbLE#scrollTo=xSmbHGa-Rrw3" target='_blank'>Link do notebook</a></Button>
               </div>
             </div>
+            <div className="projeto1">
+              <h1 style={{textAlign: 'center'}}>Notebook colab com funções e gráficos</h1>
+              <div style={{display: 'block', textAlign: 'center', paddingTop: '10px'}}>
+                <h2>Descrição:</h2>
+                <p>Neste notebook, utilizei algumas funções prontas de bibliotecas para geração de derivada e integral, o que pode auxiliar muito no dia a dia como cientista de dados, plotei gráficos paramétricos, e realizei o preenchimento de uma curva de forma mais simples, porém que também aplica o conceito do cálculo integral por baixo dos panos</p>
+                <Button marginTop={'10px'}><a style={{height: '100%', width: '100%',display: 'flex', justifyContent: 'center', alignItems: 'center'}} href="https://colab.research.google.com/drive/14C2897F_XN43vAePdqOxHspGPfabw7A3#scrollTo=wLej-DmXFcV7" target='_blank'>Link do notebook</a></Button>
+              </div>
+            </div>
           </div>
         </div>
         

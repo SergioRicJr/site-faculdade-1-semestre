@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FaFacebookSquare, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebookSquare, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 const RedesSociais = () => {
   return (
@@ -35,8 +35,8 @@ const RedesSociais = () => {
             </div>
           </div>
           <div className="cont Whats">
-            <a href="https://whatsapp.com" target='_blank'>
-              <FaWhatsapp />
+            <a href="https://www.linkedin.com/in/sergio-nascimento-260918223" target='_blank'>
+              <FaLinkedin/>
             </a>
           </div>
           <div className="espacoVazio 3"></div>

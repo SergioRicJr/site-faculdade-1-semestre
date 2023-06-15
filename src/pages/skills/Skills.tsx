@@ -500,7 +500,9 @@ const Skills = () => {
                   />
                 })
               }
+             
               <section id='certificados'>
+                  <h2 style={{textAlign: 'center'}}>Clique nos blocos abaixo para acessar os certificados...</h2>
                   <div className="muralCertificados">
                       {listaCertificados.map((certificado)=> {return <Certificado cargaHoraria={certificado.cargaHoraria} link={certificado.link} listaConteudos={certificado.listaConteudos} titulo={certificado.titulo} svgIcon={certificado.svgIcon}/>})}
                   </div>
@@ -511,7 +513,7 @@ const Skills = () => {
                 console.log(document.querySelector(".mainContato")?.scrollIntoView({behavior: 'smooth'}))
               } 
             }>
-              <FontAwesomeIcon className='movIconDown' icon={faAnglesDown} />
+              <FontAwesomeIcon className='movIconDown' icon={faAnglesDown}/>
             </div>
           </div>
       </div>

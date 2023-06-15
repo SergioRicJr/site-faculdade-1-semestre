@@ -83,11 +83,11 @@
 
 .Whats {
     grid-area: whats;
-    color: rgb(10, 187, 10);
+    color: rgb(68, 96, 182);
 }
 
 .Whats:hover {
-    background-color: rgb(10, 187, 10);
+    background-color: rgb(68, 96, 182);
     color: white;
 }
 
