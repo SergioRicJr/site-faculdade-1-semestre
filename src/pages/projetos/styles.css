@@ -24,7 +24,22 @@
     font-weight: 550;
     font-family: 'Montserrat', sans-serif;
 }
-  
+
+#title-github-projects {
+    width: 33%;
+}
+
+@media only screen and (max-width: 819px) {
+    #title-github-projects {
+        display: none;
+    }
+
+    #headerGit {
+        justify-content: center;
+        gap: 35px;
+    }
+  }
+
 
 /* #loadReps:hover { */
     /* transform: scale(1.01); */
@@ -39,10 +54,12 @@
 }
 
 #containerLogo {
-    display: flex;
+    /* display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 80px;
-    flex: 1;
+    flex: 1; */
+    width: 33%;
 }
 
 #contasGit {
@@ -56,7 +73,7 @@
 }   
 
 #paiContasGit {
-    flex: 1;
+    width: 33%;
 }
 
 #areaCards {

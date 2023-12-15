@@ -32,7 +32,7 @@ const Projetos = () => {
             <div id='containerLogo'>
               <FaGithub size="80px" />
             </div>
-            <h2>My Projects</h2>
+            <h2 id='title-github-projects'>My Projects</h2>
             <div id='paiContasGit'>
               <select id='contasGit' onChange={(event)=> {
                     setRepositories(()=> [])

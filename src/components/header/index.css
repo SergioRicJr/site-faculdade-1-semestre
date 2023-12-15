@@ -16,3 +16,50 @@
     cursor: pointer;
     color: rgb(228, 228, 228);
 }
+
+#links-header {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+.button-header {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 660px) {
+    .header-link {
+        z-index: 100;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    #headerPrincipal {
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .button-header {
+        pointer-events: all;   
+    }
+
+    .button-header:hover {
+        cursor: pointer;
+    }
+
+    #links-header {
+        flex-direction: column;
+        position: absolute;
+        top: calc(100%);
+        width: 100%;
+        gap: 7px;
+        background-color: rgba(5, 52, 169, 0.201);
+        z-index: 12; 
+        /* width: 80%;
+        justify-content: space-between; */
+    }
+    
+  }
